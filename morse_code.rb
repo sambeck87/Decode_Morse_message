@@ -76,8 +76,8 @@ puts decode_word('-. .- -- .')
 def decode(morse_text)
   temp = ''
   result = ''
-  morse_text.split(/\s/).each do |e|
-    e.split(' ').each do |char|
+  morse_text.split('  ').each do |e|
+    e.split(/\s/).each do |char|
       decoded = decode_word(char)
       temp += decoded
     end
